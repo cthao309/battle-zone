@@ -1,0 +1,231 @@
+/**{
+	outline: red 1px solid;
+}
+*/
+
+body{
+	text-align: center;
+	margin: 0;
+}
+
+h1,.flowingText{
+	font-size: 2.5em;
+	text-shadow:
+	 0 -2px 3px #FFF,
+	 0 -4px 3px #AAA,
+	 0 -6px 6px #666,
+	 0 -8px 9px #000;
+}
+
+/*main buttons*/
+#fire:hover, .btn1:hover, .btn2:hover, .btn3:hover{
+	font-weight: bolder;
+	color: red;
+	background-color: blue;
+}
+
+.btn1{
+	background-color: green;
+	color: white;
+}
+
+.btn2{
+	background-color: red;
+	color: white;
+}
+
+#fire1, #fire2{
+	display: none;
+	position: absolute;
+	left: 11%;
+	top: 32%;
+	background-color: crimson ;
+	color: white;
+	width: 10%;
+	height: 5%;
+}
+
+#message{
+	display: none;
+	position: absolute;
+	left: 46%;
+	top: 29%;
+	background-color: crimson ;
+	color: white;
+	width: 10%;
+	height: 5%;	
+}
+
+ul li{
+	border: 1px solid blue;
+	padding: .5em;
+	border-radius: 5px; 
+	background-color: pink;
+	display: inline-block;
+}
+
+/*user input*/
+legend{
+	font-size: 2.5em;
+	text-shadow:
+	 0 -2px 3px #FFF,
+	 0 -4px 3px #AAA,
+	 0 -6px 6px #666,
+	 0 -8px 9px #000;
+}
+
+label{
+	color: white;
+}
+
+h2{
+	text-shadow:
+	 0 -2px 3px #FFF,
+	 0 -4px 3px #AAA,
+	 0 -6px 6px #666,
+	 0 -8px 9px #000;
+}
+
+
+.direction{
+	text-align: left;
+}
+
+#height1, #distance1, #height2, #distance2{
+	color: black;
+}
+
+#player1{
+	display: none;
+	position: absolute;
+	left: 4%;
+	top: 19%;
+	border: 1px solid black;
+	padding: 5px;
+	height: 19%;
+}
+
+#player2{
+	display: none;
+	position: absolute;
+	left: 4%;
+	top: 19%;
+	border: 1px solid black;
+	padding: 5px;
+	height: 19%;
+}
+
+#newGame{
+	display: none;
+	position: absolute;
+	left: 42%;
+	top: 50%;
+	
+}
+
+/*initial position of the tankers*/
+.pic{
+	width: 100%;
+	height: 650px;
+	border: 1px solid blue;
+	margin: 0 auto;
+	background-image: linear-gradient(rgb(39, 84, 179), rgb(206, 206, 235));;
+}
+
+.tanker1{
+	width: 118px;
+	height: 59px;
+	padding: 0px;
+	background-image: url("../images/bus.png");
+	background-repeat: no-repeat;
+	position: relative;
+	top: 544px;
+	left: 47.5%;
+	display: none;
+
+	transition:all 3s linear;
+	transform: rotateY(180deg);
+}
+
+#cannon1{
+	width: 15px;
+	height: 15px;
+	background-color: blue;
+	border: 1px solid red;
+	border-radius: 13px;
+
+	margin: 0 auto;
+	position: relative;
+	top: -2px;
+	left: 0px;
+
+	display: none;
+}
+
+.tanker2{
+	width: 232px;
+	height: 104px;
+	background-image: url("../images/plane.png");
+	background-repeat: no-repeat;
+	position: relative;
+	top: 45;
+	left: 682px;
+	 display: none;
+}
+
+#cannon2{
+	width: 15px;
+	height: 15px;
+	background-color: red;
+	border: 1px solid red;
+	border-radius: 13px;
+
+	margin: 0 auto;
+	position: relative;
+	top: 50px;
+	left: -20px;
+
+	display: none;
+}
+
+#grass{
+	width: 100%;
+	height: 120px;	
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, from(rgb(63, 184, 25)), to(rgb(13, 14, 12)));); 
+	position: absolute;	
+}
+
+.text{
+	font-size: 1.5em;
+	position: relative;
+	top: 500px;
+	left: 0%;
+	display: none;
+
+}
+
+.credit, .author{
+	font-size: 2.5em;
+	text-shadow:
+	 0 -2px 3px #FFF,
+	 0 -4px 3px #AAA,
+	 0 -6px 6px #666,
+	 0 -8px 9px #000;
+
+	 position: relative;
+	 top: 400px;
+	 display: none;
+}
+
+#message1, #message2{
+	display: none;
+	position: relative;
+	top: -439px;
+	left: 21%;
+	color: white;
+	font-size: 4.5em;
+	border: 2px solid gray;
+	width: 50%;
+}
+
+

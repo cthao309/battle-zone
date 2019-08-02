@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>PairProject</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/pairProject.css">
+		<script type="text/javascript" src="lib/jquery.js"></script>
+		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<h1>Pairing Project (Charlie and Noble)</h1>	
+
+		<div class="text">Click "Start Game" button to start the game<br> or click on "How to Play?" button for instruction
+		</div>
+	 <marquee class="flowingText"> Welcome to Battle Zone </marquee>
+
+	 <ul >
+	 		<li class="btn1"> Start Game </li>
+	 		<li class="btn2"> Reset Game </li>
+	 		<li class="btn btn-primary btn3 modal-title" data-toggle="modal" data-target=".bs-example-modal-lg">How To Play?</li>
+
+			<div class="modal fade bs-example-modal-lg modal-body" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg">
+			    <div class="modal-content">
+			      <h2>Battle Zone is a game alterating between two person</h2>
+			      <p>The game goes like this:
+			      	<ul class="direction">
+			      		<li>1. Start game by clicking on the "Start Game" button.
+			      		<br>2. Players guess the position of the other tanker's position and fire.
+		      			<br>3. If the guessed number is not the correct position of the other tanker, the game will alternate to the other player
+		      			<br>4. This will continue until one of the player guess it correctly or they reset the game</li>
+		      		</ul>
+		      	</p>
+		      	<div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>       
+		      </div>
+			    </div>
+			  </div>
+			</div>
+	 </ul>
+
+	 <div class="logo"><img src="images/logo.jpg"></div>
+	 <div class="credit">This game is created by</div>
+	 <div class="author">Charlie and Noble</div>
+
+	 <div id="player1">
+	 		<fieldset>
+	 			<legend> Player 1 </legend>
+	 			<label> Height Aimed:
+	 				<input type="text" name="y" id="height1" size="10">
+	 			</label>
+	 			<label> Distance:
+	 				<input type="text" name="x" id="distance1" size="10">
+	 			</label>
+	 		</fieldset>
+	 </div>	<!-- close "player 1" div -->
+
+ 	 <div id="player2">
+ 		<fieldset>
+ 			<legend> Player 2 </legend>
+ 			<label> Aimed Down:
+ 				<input type="text" name="y" id="height2" size="10">
+ 			</label>
+ 			<label> Distance:
+ 				<input type="text" name="x" id="distance2" size="10">
+ 			</label>
+ 		</fieldset>
+	 </div>	<!-- close "player 2 div -->
+
+		<div class="pic">
+				<div id = "still-image"> </div>
+				<div class = "tanker1 tanker1Div">
+						<div id = "cannon1"> </div>
+			 </div>
+			 <div class = "tanker2 tanker2Div"> 
+					<div id = "cannon2"> </div>
+			 </div>
+		</div>	<!-- close "pic" div -->
+
+		<div id="grass"></div>
+
+		<div id="message1">Player 1 Won</div>
+		<div id="message2">Player 2 Won</div>
+
+		<button id="newGame"> New Game </button>
+		<button id="fire1"> Fire!!! </button>
+		<button id="fire2"> Fire!!! </button>
+
+	<audio id="theme-music" src="sound/street-fighter-theme.mp3">
+	<audio id="hadouken-sound" src="sound/hadouken.mp3">
+
+	<script type="text/javascript" src="js/pairProject.js"></script>
+	</body>
+
+</html>
